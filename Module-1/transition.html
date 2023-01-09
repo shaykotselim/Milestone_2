@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+            .transition{
+                height: 200px;
+                width: 200px;
+                border: 2px solid blue;
+                background-color: chartreuse;
+                border-radius: 50%;
+                align-items: center;
+                transition: width 5s linear 2s, height 5s linear 2s;
+                
+            }
+            .transition:hover{
+                width: 400px;
+                height: 400px;
+                
+            }
+    </style>
+</head>
+<body>
+        <h1>This is transiton</h1>
+            <div class="transition">
+                        <p>Transition</p>
+            </div>
+
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket</title>
+    <style>
+        .playGroud{
+                /* height: 400px;  */
+                border: 1px solid black;
+                /* transform: rotate(60deg); */
+        }
+        .playGroud:hover .bat{
+            transform: rotate(-50deg);
+            transform-origin: top right;
+        }
+        .bat{
+            transition: transform 0.2 ease-in;
+        }
+        .ball{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border: 2px solid black;
+            border-radius: 50%;
+            position: relative;
+            left: 454px;
+            transition: transform 1s ease-out 0.2s;
+        }
+        .playGroud:hover .ball{
+            transform: translate(1000px, -450px);
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+        <h1>Cricket Match - 2K23</h1>
+    <div class="playGroud">
+        <img class="bat" src="./utlities/Images/bat-removebg-preview.png" alt="">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
